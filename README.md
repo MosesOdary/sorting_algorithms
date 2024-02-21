@@ -18,7 +18,7 @@ General Learning Objectives
     How to select the best sorting algorithm for a given input
     What is a stable sorting algorithm
 
-Also of Note is to understand the implementation of the following:
+Also of Note is to understand the implementation of the following, using C code:
 
     O(1)
     O(n)
