@@ -2,23 +2,22 @@
 
 /**
  * swap_ints - ints from array being swapped
- * @a: int 1 being swapped
- * @b: int 2 being swapped
+ * @x: int 1 being swapped
+ * @y: int 2 being swapped
  */
-void swap_ints(int *a, int *b)
+void swap_ints(int *x, int *y)
 {
 	int tmp;
 
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
+	tmp = *x;
+	*x = *y;
+	*y = tmp;
 }
 
 /**
  * shell_sort - Sorts integers from array; uses asending order
  * @array: memory block of integers
  * @size: size of memory block(array)
- *
  * Description: Knuth sequence of interval is provided.
  */
 void shell_sort(int *array, size_t size)
