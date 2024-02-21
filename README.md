@@ -10,4 +10,10 @@ General
     Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
     You are not allowed to use global variables
     No more than 5 functions per file
-    
+
+General Learning Objectives
+
+    At least four different sorting algorithms
+    What is the Big O notation, and how to evaluate the time complexity of an algorithm
+    How to select the best sorting algorithm for a given input
+    What is a stable sorting algorithm
