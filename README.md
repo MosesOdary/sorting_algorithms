@@ -17,7 +17,8 @@ General Learning Objectives
     What is the Big O notation, and how to evaluate the time complexity of an algorithm
     How to select the best sorting algorithm for a given input
     What is a stable sorting algorithm
-Also of Note:
+
+Also of Note is to understand the implementation of the following:
 
     O(1)
     O(n)
