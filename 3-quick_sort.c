@@ -17,8 +17,7 @@ void SwapIntegers(int *x, int *y)
 
 
 /**
- * lomuto_partition - Order an array subset of integers according
- * 			to the lomuto partition scheme (last element as pivot)
+ * lomuto_partition - Order array subset of integers
  *
  * @array: The array of integers
  * @size: The size of the array
