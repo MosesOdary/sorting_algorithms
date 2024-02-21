@@ -1,64 +1,55 @@
 #include "sort.h"
 
+
 /**
-* selection_sort - function to perform selectionsorting
-*
-* @array: memory for data items
-* @size: data items' size
-*
-* Return: nothing to return
+ * SwapIntegers - Swap two integers in an array.
+ * @a: The first integer to SwapIntegers.
+ * @b: The second integer to SwapIntegers.
+ */
+
+void SwapIntegers(int *x, int *y)
+{
+	int temp = *x;
+
+	*x = *y;
+	*y = temp;
+}
+
+
+/**
+ * selection_sort - Sort an array of integers in ascending order using selection sort
+ *
+ * @array: An array of integers.
+ * @size: The size of the array.
+ *
+ * Description: Prints the array after each SwapIntegers.
+ *
+ * Time Complexity: O(n^2)
 */
 void selection_sort(int *array, size_t size)
 {
+	int *smaller = NULL;
 	uint16_t i = 0;
 	uint16_t j = 0;
-	uint32_t smallest = 0;
 
 	if (array == NULL || size < 2)
 		return;
 
 	for (i = 0; i < size - 1; i++)
 	{
-		smallest = i;
-
+		smaller = array + i;
 		for (j = i + 1; j < size; j++)
+			smaller = (array[j] < *smaller) ? (array + j) : smaller;
+
+		if ((array + i) != smaller)
 		{
-			if (array[j] < array[smallest])
-			{
-				smallest = j;
-			}
+			SwapIntegers(array + i, smaller);
+
+			print_array(array, size);
 		}
-		Swap(array, i, smallest);
-		print_array(array, size);
 	}
 }
 
-/**
-* Swap - function to enable swapping of data items
-*
-* @array: memory block holding data iems to be sorted
-* @first: first data item to be compared with second for sorting
-* @second: second data for comparison and swapping
-*
-* Return: nothing to return
-*/
-void Swap(int array[], size_t first, size_t second)
-{
-	int temp = array[first];
-
-	array[first] = array[second];
-	array[second] = temp;
-}
-
-#include <stdio.h>
-#include <stdlib.h>
-#include "sort.h"
-
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
 int main(void)
 {
     int array[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};

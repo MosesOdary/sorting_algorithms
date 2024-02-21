@@ -32,4 +32,6 @@ void quick_sort(int *array, size_t size);
 
 void Swap(int array[], size_t first, size_t second);
 
+
+
 #endif
