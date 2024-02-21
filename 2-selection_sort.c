@@ -6,7 +6,6 @@
  * @x: The first integer to SwapIntegers.
  * @y: The second integer to SwapIntegers.
  */
-
 void SwapIntegers(int *x, int *y)
 {
 	int temp = *x;
