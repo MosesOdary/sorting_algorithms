@@ -4,12 +4,12 @@ Sorting algorithms and Big O notation
 General
 
     Allowed editors: vi, vim, emacs
-    All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-    All your files should end with a new line
-    A README.md file, at the root of the folder of the project, is mandatory
-    Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
-    You are not allowed to use global variables
-    No more than 5 functions per file
+    All files are compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+    All your files end with a new line
+    Presence of a README.md file, at the root of the folder of the project.
+    Code uses the Betty style. It is checked using betty-style.pl and betty-doc.pl
+    We are not allowed to use global variables
+    We are not allowed to have more than 5 functions per file.
 
 General Learning Objectives
 
