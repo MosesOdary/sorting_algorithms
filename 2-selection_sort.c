@@ -1,9 +1,11 @@
 #include "sort.h"
 
-/*
+/**
 * selection_sort - function to perform selectionsorting
+*
 * @array: memory for data items
 * @size: data items' size
+*
 * Return: nothing to return
 */
 void selection_sort(int *array, size_t size)
@@ -28,19 +30,22 @@ void selection_sort(int *array, size_t size)
 		}
 		Swap(array, i, smallest);
 		print_array(array, size);
-	} 
+	}
 }
 
-/*
+/**
 * Swap - function to enable swapping of data items
+*
 * @array: memory block holding data iems to be sorted
 * @first: first data item to be compared with second for sorting
 * @second: second data for comparison and swapping
+*
 * Return: nothing to return
 */
 void Swap(int array[], size_t first, size_t second)
 {
 	int temp = array[first];
+
 	array[first] = array[second];
 	array[second] = temp;
 }
