@@ -10,22 +10,25 @@ void selection_sort(int *array, size_t size)
 {
 	uint16_t i = 0;
 	uint16_t j = 0;
-    uint32_t smallest = 0;
+	uint32_t smallest = 0;
 
-    for (i = 0; i < size - 1; i++)
-    {
+	if (array == NULL || size < 2)
+		return;
+
+	for (i = 0; i < size - 1; i++)
+	{
 		smallest = i;
 
-        for (j = i + 1; j < size; j++)
-        {
-            if (array[j] < array[smallest])
-            {
-                smallest = j;
-            }
-        }
-        Swap(array, i, smallest);
+		for (j = i + 1; j < size; j++)
+		{
+			if (array[j] < array[smallest])
+			{
+				smallest = j;
+			}
+		}
+		Swap(array, i, smallest);
 		print_array(array, size);
-    } 
+	} 
 }
 
 /*
