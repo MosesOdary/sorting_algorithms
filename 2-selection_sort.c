@@ -1,6 +1,5 @@
 #include "sort.h"
 
-<<<<<<< HEAD
 /*
 * selection_sort - function to perform selectionsorting
 * @array: memory for data items
